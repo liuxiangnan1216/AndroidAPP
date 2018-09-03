@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:layout_centerHorizontal="true">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="300.0dip"
+            android:layout_height="400.0dip"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView
+        android:textSize="24.0sp"
+        android:gravity="left"
+        android:id="@+id/times"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:text="@string/test_times"
+        android:layout_below="@+id/preview" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip">
+        <EditText
+            android:id="@+id/time_selector_day"
+            android:text="@string/time_default_day"
+            android:drawableBottom="@android:drawable/divider_horizontal_textfield"
+            style="@style/time_text"
+            android:nextFocusDown="@+id/time_selector_hour"
+            android:inputType="number"
+            android:focusable="true"
+             />
+        <TextView
+            android:id="@+id/day_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_day"
+            style="@style/time_label" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:baselineAligned="false">
+        <EditText
+            android:id="@+id/time_selector_hour"
+            android:text="@string/time_default_hour"
+            android:drawableBottom="@android:drawable/divider_horizontal_textfield"
+            style="@style/time_text" 
+            android:nextFocusUp="@+id/time_selector_day"
+            android:nextFocusDown="@+id/time_selector_minute"
+            android:inputType="number"
+            android:focusable="true"
+            />
+        <TextView
+            android:id="@+id/hour_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_hour"
+            style="@style/time_label" />
+            
+            
+        <EditText
+            android:id="@+id/time_selector_minute"
+            android:text="@string/time_default_minute"
+            android:drawableBottom="@android:drawable/divider_horizontal_textfield"
+            style="@style/time_text"
+            android:nextFocusUp="@+id/time_selector_hour"
+            android:nextFocusDown="@+id/time_selector_second"
+            android:inputType="number"
+            android:focusable="true"
+             />
+        <TextView
+            android:id="@+id/minute_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_minute"
+            style="@style/time_label" />
+            
+            
+        <EditText
+            android:id="@+id/time_selector_second"
+            android:text="@string/time_default_second"
+            android:drawableBottom="@android:drawable/divider_horizontal_textfield"
+            style="@style/time_text" 
+            android:nextFocusUp="@+id/time_selector_minute"
+            android:inputType="number"
+            android:focusable="true"
+            />
+        <TextView
+            android:id="@+id/second_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_second"
+            style="@style/time_label" />
+    </LinearLayout>
+</LinearLayout>

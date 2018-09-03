@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/monkey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_monkey" />
+
+    <Button
+        android:id="@+id/factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_factory" />
+    
+    <Button
+        android:id="@+id/reboot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reboot_test" />
+    
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tips" />
+         />
+</LinearLayout>

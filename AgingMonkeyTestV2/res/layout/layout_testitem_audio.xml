@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="16.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="24.0sp"
+        android:id="@+id/audio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+string/audio_name" />
+    <CheckBox
+        android:enabled="false"
+        android:id="@+id/output_microphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:text="@string/output_microphone"
+        android:layout_below="@id/audio_name" />
+    <CheckBox
+        android:enabled="false"
+        android:id="@+id/output_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/output_speaker"
+        android:layout_below="@id/output_microphone"
+        android:layout_marginEnd="36.0dip" />
+</RelativeLayout>
