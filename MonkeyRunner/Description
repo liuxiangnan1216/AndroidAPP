@@ -1,0 +1,2 @@
+monkeyRunner录制脚本是依靠mongkeyrunner运行的 
+运行命令  monkeyrunner monkey_recorder.py 等
