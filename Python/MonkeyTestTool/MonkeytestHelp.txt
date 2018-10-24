@@ -1,0 +1,119 @@
+Monkey命令参数介绍
+1. -p ALLOWED_PACKAGE
+用于指定某个apk，可以使用多个-p选项，但是每个-p命令选项只能用于
+一个apk如果不指定-p，Monkey就会默认进行全系统测试。
+
+2. -c MAIN_CATEGORY
+用于指定某个类，可以使用多个-c选项，但是每个-c命令选项只能用于
+一个类。如不指定类，Monkey就默认执行Intent.Category_LAUNCHER
+或者Intent.Category_MONKEY
+
+3. --ignore-crashes
+忽略程序崩溃。设置此选项后，Monkey会执行完所有的事件，
+不会因crash而停止。
+
+4.  --ignore-timeouts
+忽略程序无响应。设置此选项后，Monkey会执行完所有的事件，
+不会因ANR而停止。
+
+5.  --ignore-security-exceptions
+忽略证书或认证异常。设置此选项后，Monkey会执行完所有的事件，
+不会因认证或证书异常而停止。
+
+6.  --monitor-native-crashes
+监视系统中本地代码发生的崩溃。
+
+7. --ignore-native-crashes
+忽略本地代码导致的崩溃。设置忽略后，Monkey将执行完所有的事件，
+不会因此停止。
+
+8. --kill-process-after-error
+设置了该选项，出错的程序就会停止。
+
+9. --pct-touch PERCENT
+调整触摸事件的百分比
+
+10. --pct-motion PERCENT
+调动作事件的百分比
+
+11. --pct-trackball PERCENT
+调整轨迹球事件的百分比
+
+12. --pct-syskeys PERCENT
+调整系统按键事件的百分比(home\back\call\end call\volume key)
+
+13. --pct-nav PERCENT
+调整基本导航事件的百分比
+
+14. --pct-majornav PERCENT
+调整主要导航事件的百分比(ok\cancel\menu等引发图形接口的动作)
+
+15. --pct-appswitch PERCENT
+调整启动活动的百分比
+
+16. --pct-flip PERCENT
+调整点击事件的百分比
+
+17. --pct-anyevent PERCENT
+调整其他类型事件的百分比（其他所有类型）
+
+18. --pkg-blacklist-file PACKAGE_BLACKLIST_FILE
+apk黑名单，屏蔽掉黑名单中的apk。
+
+19. --pkg-whitelist-file PACKAGE_WHITELIST_FILE
+apk白名单，只测试包含在白名单中的apk
+
+20. -s SEED
+随机数生成器的seed值。如果用相同的seed值再次运行Monkey，
+它将生成相同的事件时序。
+
+21. -v
+每个-v都将增加反馈信息的级别。共3个级别，
+因此，-v -v -v可以提供最详细的设置信息
+
+22. --throttle MILLISEC
+事件之间插入的固定延迟。通过这个选项可以减缓Monkey的执行速度。
+如果不指定，Monkey将尽可能快的产生并执行事件
+
+23  --randomize-throttle
+事件之间插入随机延时。
+
+24. COUNT
+执行事件次数
+
+软件部分说明：
+该工具是封装了 Google 的 monkey 测试命令
+1. Devices页面
+该页面选择测试设备同时可以支持 10 台设备测试 ，
+点击 GET DEVICES ID 获取设备号每台设备号必须不同否则无法测试。
+勾选需要测试的设备点击 SAVE 保存
+
+2.全 APP 测试
+对设备中的已有应用进行 monkey 测试，根据 Android 版本选择平台，
+测试次数根据项目需求填写，时延 每次事件间隔时间单位 毫秒
+Log等级分为 0 - 3 共4个等级0为默认，1 对应monkey命令中的 -v
+一次类推。是否输出Log不是 MTKLog 。其余选项根据需要勾选。
+当选择了 ‘是否屏蔽应用’ 请在 ‘Black List’ 页面添加 black list 
+
+3.单包测试
+基本和 2. 相同 只是用来测试单个应用的 monkey 测试，
+
+4.参数设置
+SEED      对应第一部分参数说明的 20.
+Flip      对应第一部分参数说明的 16.
+Touch     对应第一部分参数说明的 9.
+Motion    对应第一部分参数说明的 10.
+TrackBall 对应第一部分参数说明的 11.
+Nav       对应第一部分参数说明的 13.
+Majornav  对应第一部分参数说明的 14.
+Syskeys   对应第一部分参数说明的 12.
+AppSwitch 对应第一部分参数说明的 15.
+Anyevent  对应第一部分参数说明的 17.
+
+5.Black List
+启动自动获取 Device 已有应用
+如果未正常获取请重新连接 Device 并点击 GET 重新获取
+‘+’将应用添加到 Black List中
+‘-’将 Black List 中的移除
+‘BlackListPath’ device中保存 blacklist 的路径，
+点击‘SAVE’ 保存进 device 中
