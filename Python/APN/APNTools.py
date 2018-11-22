@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/10/25 15:50
-# @Author  : LiuXiangNan
+# @Author  : 
 # @Site    : 
-# @File    : SagerealAPNTools.py
+# @File    :
 import datetime
 import re
 import sqlite3

@@ -73,8 +73,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "SagerealFunctionMobileAPNImport"))
-        self.label.setText(_translate("MainWindow", "Sagereal 功能机 APN 参数 EXCEL 表格导入"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "FunctionMobileAPNImport"))
+        self.label.setText(_translate("MainWindow", "功能机 APN 参数 EXCEL 表格导入"))
         self.pushButton_about.setText(_translate("MainWindow", "About"))
         self.label_path.setText(_translate("MainWindow", "EXCEL表格路径："))
         self.toolButton_path.setText(_translate("MainWindow", "..."))
