@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reboot_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_reboot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="60"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/memory_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_memory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="15600"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emmc_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_emmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="24"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/battery_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/audio_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="11"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vibrator_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_vibratormin"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="40"
+                    android:inputType="number|numberDecimal"/>
+                <TextView
+                    android:id="@+id/tv_show61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_vibratorsec"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="0"
+                    android:inputType="number|numberDecimal"/>
+                <TextView
+                    android:id="@+id/tv_show62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秒"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camera_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="80"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="32"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lcd_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_lcd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1300"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_show9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gps_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_gps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bt_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_wifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sensor_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/backlight_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="1300"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_show14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/earpiece_setting"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_earmin"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="30"
+                    android:inputType="number|numberDecimal"/>
+                <TextView
+                    android:id="@+id/tv_show141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/ed_earsec"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:text="0"
+                    android:inputType="number|numberDecimal"/>
+                <TextView
+                    android:id="@+id/tv_show142"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秒"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:text="AUTO_START"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

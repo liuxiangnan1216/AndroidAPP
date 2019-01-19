@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting" />
+
+    <Button
+        android:id="@+id/button_mau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MANUALLY_START" />
+
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/button_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Info" />
+    <Button
+        android:id="@+id/button_stopservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOP SERVICE" />
+
+    <TextView
+        android:id="@+id/tv_maininfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+         />
+</LinearLayout>

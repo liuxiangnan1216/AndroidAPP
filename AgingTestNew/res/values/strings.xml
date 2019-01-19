@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AgingTestNew</string>
+    <string name="auto_run_complete_string_format">TestType:    %1$d</string>
+    <string name="reboot">Reboot</string>
+    <string name="memory">Memory</string>
+    <string name="emmc">Emmc</string>
+    <string name="battery">Battery</string>
+    <string name="audio">Audio</string>
+    <string name="vibrator">Vibrator</string>
+    <string name="camera">Camera</string>
+    <string name="video">Video</string>
+    <string name="lcd">LCD</string>
+    <string name="gps">GPS</string>
+    <string name="bt">Bluetooth</string>
+    <string name="wifi">WiFi</string>
+    <string name="sensor">Sensor</string>
+    <string name="backlight">BackLight</string>
+    <string name="earpiece">Earpiece</string>
+    <string name="reboot_setting">Reboot次数:</string>
+    <string name="memory_setting">Memory次数:</string>
+    <string name="emmc_setting">Emmc次数:</string>
+    <string name="battery_setting">Battery次数:</string>
+    <string name="audio_setting">Audio次数:</string>
+    <string name="vibrator_setting">Vibrator时长:</string>
+    <string name="camera_setting">Camera次数:</string>
+    <string name="video_setting">Video次数:</string>
+    <string name="lcd_setting">LCD次数:</string>
+    <string name="gps_setting">GPS次数:</string>
+    <string name="bt_setting">Bluetooth次数:</string>
+    <string name="wifi_setting">WiFi次数:</string>
+    <string name="sensor_setting">Sensor次数:</string>
+    <string name="backlight_setting">BackLight次数:</string>
+    <string name="earpiece_setting">Earpiece时长:</string>
+
+</resources>

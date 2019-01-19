@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lxn.agingtestnew"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    
+    <!-- 粗略定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 精细定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 模拟定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <!-- 网络访问授权 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+	<uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.lxn.agingtestnew.ManuTestActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.BaseTestActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.TestActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.HelpActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.CompletedActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.ResultShowActivity"/>
+        <activity android:name="com.example.lxn.agingtestnew.SettingsActivity"/>
+        
+        <service android:name="com.example.lxn.agingtestnew.service.BatteryTestService"/>
+        <service android:name="com.example.lxn.agingtestnew.service.AutoRunService"/>
+        
+        <receiver
+            android:name="com.example.lxn.agingtestnew.broadcast.StartReceiver"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:host="1234" android:scheme="android_secret_code" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:host="1234" android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
