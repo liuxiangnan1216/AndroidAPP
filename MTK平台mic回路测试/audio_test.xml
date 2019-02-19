@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tv"
+        android:layout_marginTop="156dp"
+        android:layout_weight="1"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnstart"
+        android:layout_centerVertical="true"
+        android:text="STOP" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="MIC回路测试" />
+
+    <Chronometer
+        android:id="@+id/chronometerTime"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnstart"
+        android:layout_marginTop="103dp"
+        android:format="00:00:00"
+        android:paddingLeft="5dp"
+        android:textColor="#33CC33"
+        android:textSize="18sp" />
+</RelativeLayout>
+
