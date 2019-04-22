@@ -1,0 +1,5 @@
+该工程分为三部分
+1. AutoAnswer 为配合机自动应答app 需要系统权限
+2. BatteryKPITest 为 Uiautomator 测试脚本
+3. RunService 为开启测试脚本APP 需要系统权限
+使用时请将源码工程使用 Androi Studio 打开，后生成未签名的app后在使用同系统源码进行平台签名
