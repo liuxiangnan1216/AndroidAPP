@@ -1,0 +1,13 @@
+com.mediatek.engineermodecmas
+com.dyc.factorymode
+com.android.managedprovisioning
+com.mediatek.op06.ims
+com.mediatek.calendarimporter
+com.mediatek.thermalmanager
+om.mediatek.callrecorder
+com.android.providers.partnerbookmarks
+com.android.smspush
+com.mtk.telephony
+com.google.android.backuptransport
+com.android.storagemanager
+com.android.bookmarkprovider

@@ -183,8 +183,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Sagereal APN Test Tool"))
-        self.label.setText(_translate("MainWindow", "Sagereal功能机APN测试Tool(试用)"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "APN Test Tool"))
+        self.label.setText(_translate("MainWindow", APN测试Tool(试用)"))
         self.pushButton_about.setText(_translate("MainWindow", "About"))
         self.label_country.setText(_translate("MainWindow", "国家码:"))
         self.label_list_2.setText(_translate("MainWindow", "市场名:"))

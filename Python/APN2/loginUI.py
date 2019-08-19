@@ -63,4 +63,4 @@ class Ui_Dialog(object):
         self.pushButton_cancel.setText(_translate("Dialog", "取消"))
         self.label_username.setText(_translate("Dialog", "用户名："))
         self.label_pwd.setText(_translate("Dialog", "密   码："))
-        self.label_title.setText(_translate("Dialog", "Sagereal 功能机 APN CHECK 工具 "))
+        self.label_title.setText(_translate("Dialog", " APN CHECK 工具 "))

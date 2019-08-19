@@ -1,0 +1,19 @@
+工具功能：
+1、每隔固定时间，通过adb抓取mtklog到PC端，并打包成zip。以避免MTBF测试中，旧的log被覆盖。
+2、PC端log存放位置：
+   .\MTBF-log\yyyymmdd_hhmmss\SN\mtklog_xxxxxxxx_xxxxxx_exception.zip 如果发生过exception
+   .\MTBF-log\yyyymmdd_hhmmss\SN\mtklog_xxxxxxxx_xxxxxx.zip 表示没有exception
+3、提交issue时，需提交xx_exception.zip及其前后一个zip包。为保险，请本地保留所有log，直到issue关闭。
+
+安装：
+ 1.安装Java运行时环境，http://www.java.com/zh_CN/download/manual.jsp
+ 2.确认adb版本相同。如果其它tool也使用adb，请将其使用的adb覆盖本tool中的adb，否则会出现互相kill-server的情况。
+
+配置文件：LoNg.ini （无特殊要求，请跳过此设置。）
+ sleep=5
+ 表示每5分钟抓取一次log。
+
+运行：启动LoNg.bat
+
+LoNg工具自身的log：当前目录下 KT-log/kt.log。
+ 长时间运行kt.log会变大，重新启动LoNg.bat之前，可以将其删除。

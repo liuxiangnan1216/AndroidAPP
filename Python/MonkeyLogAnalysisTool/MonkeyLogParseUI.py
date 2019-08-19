@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MonkeyLogParseUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(574, 501)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(30, 0, 561, 81))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(20)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.line = QtWidgets.QFrame(self.centralwidget)
+        self.line.setGeometry(QtCore.QRect(10, 70, 551, 16))
+        self.line.setFrameShape(QtWidgets.QFrame.HLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.pushButton_help = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_help.setGeometry(QtCore.QRect(450, 30, 50, 23))
+        self.pushButton_help.setObjectName("pushButton_help")
+        self.pushButton_about = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_about.setGeometry(QtCore.QRect(510, 30, 50, 23))
+        self.pushButton_about.setObjectName("pushButton_about")
+        self.label_path = QtWidgets.QLabel(self.centralwidget)
+        self.label_path.setGeometry(QtCore.QRect(20, 140, 61, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.label_path.setFont(font)
+        self.label_path.setObjectName("label_path")
+        self.lineEdit_path = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_path.setGeometry(QtCore.QRect(90, 140, 421, 30))
+        self.lineEdit_path.setObjectName("lineEdit_path")
+        self.toolButton_path = QtWidgets.QToolButton(self.centralwidget)
+        self.toolButton_path.setGeometry(QtCore.QRect(520, 140, 37, 30))
+        self.toolButton_path.setObjectName("toolButton_path")
+        self.pushButton_start = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_start.setGeometry(QtCore.QRect(10, 410, 551, 41))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(20)
+        self.pushButton_start.setFont(font)
+        self.pushButton_start.setObjectName("pushButton_start")
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser.setGeometry(QtCore.QRect(20, 200, 531, 191))
+        self.textBrowser.setObjectName("textBrowser")
+        self.label_name = QtWidgets.QLabel(self.centralwidget)
+        self.label_name.setGeometry(QtCore.QRect(20, 90, 71, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.label_name.setFont(font)
+        self.label_name.setObjectName("label_name")
+        self.lineEdit_name = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit_name.setGeometry(QtCore.QRect(90, 90, 421, 30))
+        self.lineEdit_name.setObjectName("lineEdit_name")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 574, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Moneky Log Parse Tool"))
+        self.pushButton_help.setText(_translate("MainWindow", "Help"))
+        self.pushButton_about.setText(_translate("MainWindow", "About"))
+        self.label_path.setText(_translate("MainWindow", "PATH："))
+        self.toolButton_path.setText(_translate("MainWindow", "..."))
+        self.pushButton_start.setText(_translate("MainWindow", "START"))
+        self.label_name.setText(_translate("MainWindow", "项目名："))
+

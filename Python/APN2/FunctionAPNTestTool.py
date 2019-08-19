@@ -652,13 +652,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         conn.close()
 
     def softAbout(self):
-        tkinter.messagebox.showinfo('About', ' 仅供 Sagereal 内部使用，未经授权请勿传播!'
-                                             '\n Author  :  LiuXiangNan FengTingBo ZhuangShengBin '
-                                             '\n Mail  :  LiuXiangnan@sagereal.com '
-                                             '\n Org   :  Sagereal  '
-                                             '\n Team  :  Automation '
-                                             '\n Version :  V004(试用版) '
-                                             '\n Date : 2019-03-18')
+        tkinter.messagebox.showinfo('About', ' 仅供内部使用，未经授权请勿传播!'
+                                             '\n Author  :  '
+                                             '\n Mail  : '
+                                             '\n Org   :  '
+                                             '\n Team  :  '
+                                             '\n Version :  '
+                                             '\n Date : ')
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)  # 首先必须实例化QApplication类，作为GUI主程序入口

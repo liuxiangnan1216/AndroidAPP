@@ -484,13 +484,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def softAbout(self):
-        tkinter.messagebox.showinfo('About', ' 仅供 Sagereal 内部使用，未经授权请勿传播!'
-                                             '\n Author  :  LiuXiangNan FengTingBo ZhuangShengBin'
-                                             '\n Mail  :  LiuXiangnan@sagereal.com '
-                                             '\n Org   :  Sagereal  '
-                                             '\n Team  :  Automation '
-                                             '\n Version :  V004(试用版) '
-                                             '\n Date : 2019-03-18')
+        tkinter.messagebox.showinfo('About', ' 仅供内部使用，未经授权请勿传播!'
+                                             '\n Author  :  '
+                                             '\n Mail  :   '
+                                             '\n Org   :    '
+                                             '\n Team  :  '
+                                             '\n Version :   '
+                                             '\n Date :')
 
     def selectPath(self):
         if self.checkBox_xml.isChecked():

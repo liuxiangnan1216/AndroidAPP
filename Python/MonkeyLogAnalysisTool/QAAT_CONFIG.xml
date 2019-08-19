@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><QAAT-CONFIG>
+
+    <basic-config>
+        <result-ui-type>1</result-ui-type>
+        <log-editor-tool-name>Notepad++</log-editor-tool-name>
+        <log-editor-tool-path>C:/Program Files (x86)/Notepad++/notepad++.exe</log-editor-tool-path>
+    </basic-config>
+	
+	<log-eigen-config>
+    	<server-ip>172.26.2.235</server-ip>
+    	<server-port>6029</server-port>
+    	<tool-name>QAAT</tool-name>
+    </log-eigen-config>
+
+	<scanner-features>
+		<scanner-feature enable="true" id="1" must-enable="true" name="JavaExceptionParser">
+		    <description>Java Exception Parser</description>
+		    <class>com.mediatek.qaat.parser.JavaExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>2</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="2" must-enable="true" name="BatteryWarningParser">
+		    <description>Low Battery Level(&lt;=2%) check, Low Battery Voltage(&lt;=3.45V) check, High Temperature(&gt;=58'C) check</description>
+		    <class>com.mediatek.qaat.parser.BatteryWarningParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>1</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>true</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="3" must-enable="true" name="AnrParser">
+		    <description>Application Not Response Parser</description>
+		    <class>com.mediatek.qaat.parser.AnrParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>2</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="4" must-enable="true" name="NativeExceptionParser">
+		    <description>Native Exception Parser</description>
+		    <class>com.mediatek.qaat.parser.NativeExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>2</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="5" must-enable="true" name="KernelWarningParser">
+		    <description>Kernel Warning Parser(Kernel OOM, Proc buffer overflow, Critical Signal to SystemServer)</description>
+		    <class>com.mediatek.qaat.parser.KernelWarningParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>1</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="6" must-enable="true" name="AndroidWarningParser">
+		    <description>Android Warning Parser(System Server Hang, Surfaceflinger Hang)</description>
+		    <class>com.mediatek.qaat.parser.AndroidWarningParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>1</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="7" must-enable="true" name="SystemServerCrashParser">
+		    <description>System Server Crash Parser</description>
+		    <class>com.mediatek.qaat.parser.SystemServerCrashParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>3</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="8" must-enable="true" name="KernelPanicParser">
+		    <description>Kernel Panic Parser</description>
+		    <class>com.mediatek.qaat.parser.KernelExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>3</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="9" must-enable="false" name="SELinuxPolicyParser">
+		    <description>SELinux Policy Parser</description>
+		    <class>com.mediatek.qaat.parser.SELinuxPolicyParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>0</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="10" must-enable="true" name="ModemExceptionParser">
+		    <description>Modem Exception Parser</description>
+		    <class>com.mediatek.qaat.parser.ModemExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>2</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="11" must-enable="true" name="DrvbExceptionParser">
+		    <description>Drvb Exception Parser</description>
+		    <class>com.mediatek.qaat.parser.DrvbExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>3</feature-rank>
+		    <need-kernel-log>false</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="12" must-enable="false" name="DivisionZeroParser">
+		    <description>Division Zero Parser in Kernel</description>
+		    <class>com.mediatek.qaat.parser.DivisionZeroParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>1</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="false" id="13" must-enable="false" name="DisplayIssueParser">
+		    <description>Display issue Parser</description>
+		    <class>com.mediatek.qaat.parser.DisplayIssueParser</class>
+		    <develop-owner>Riliang Peng</develop-owner>
+		    <develop-team>MSZ_ACS_ACS8_SF6</develop-team>
+		    <feature-rank>0</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="14" must-enable="true" name="SecurityExceptionParser">
+		    <description>Security Exception Parser</description>
+		    <class>com.mediatek.qaat.parser.SecurityExceptionParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>3</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>true</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="15" must-enable="true" name="FileDescriptionLeakParser">
+		    <description>File Description Leak Parser</description>
+		    <class>com.mediatek.qaat.parser.FileDescriptionLeakParser</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>1</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>false</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+		<scanner-feature enable="true" id="16" must-enable="true" name="BootupFailParser">
+		    <description>Bootup fail Parser</description>
+		    <class>com.mediatek.qaat.parser.BootupFailParser</class>
+		    <develop-owner>Wen Luo</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>3</feature-rank>
+		    <need-kernel-log>true</need-kernel-log>
+		    <need-main-log>true</need-main-log>
+		    <need-radio-log>false</need-radio-log>
+		    <need-event-log>false</need-event-log>
+		</scanner-feature>
+	</scanner-features>
+	
+	<profile-features>
+	    
+	</profile-features>
+    
+	<analysis-features>
+	    <analysis-feature enable="false" id="1" must-enable="false" name="JavaExceptionAnalyzer">
+		    <description>Java Exception Analyzer</description>
+		    <class>com.mediatek.qaat.parser.JavaExceptionAnalyzer</class>
+		    <develop-owner>Yanghui LI</develop-owner>
+		    <develop-team>MSZ_WSD2_SE2_SS2</develop-team>
+		    <feature-rank>2</feature-rank>
+		    <depend-scanner-features>
+		        <depend-scanner-feature id="1"/>
+		    </depend-scanner-features>
+	    </analysis-feature>
+	</analysis-features>
+	
+</QAAT-CONFIG>

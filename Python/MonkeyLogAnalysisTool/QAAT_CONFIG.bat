@@ -1,0 +1,1 @@
+javaw -classpath QAAT-ProGuard.jar com.mediatek.qaat.config.ConfigFeatureFrame

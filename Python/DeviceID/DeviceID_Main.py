@@ -243,7 +243,7 @@ class Ui_DeviceID(object):
         self.label_check.setText(_translate("DeviceID", "IMEI 校 验 位(最 后 一 位)："))
         self.label_sn_end.setText(_translate("DeviceID", "结束码段："))
         self.pushButton_produce.setText(_translate("DeviceID", "生成 Device-ID文件"))
-        self.label.setText(_translate("DeviceID", "Sagereal 项目 Device-ID 生 成 工 具"))
+        self.label.setText(_translate("DeviceID", "项目 Device-ID 生 成 工 具"))
         self.pushButton_help.setText(_translate("DeviceID", "HELP"))
         self.pushButton_about.setText(_translate("DeviceID", "ABOUT"))
         self.label_3.setText(_translate("DeviceID", "*"))
@@ -269,11 +269,11 @@ class Ui_DeviceID(object):
 
 
     def softAbout(self):
-        tkinter.messagebox.showinfo('About',' Author  :  LiuXiangNan'
-                                            '\n Mail  :  LiuXiangnan@sagereal.com '
-                                            '\n Org   :  Sagereal  '
-                                            '\n Team  :  Automation '
-                                            '\n Version :  V001 '
+        tkinter.messagebox.showinfo('About',' Author  :  '
+                                            '\n Mail  :  '
+                                            '\n Org   :  '
+                                            '\n Team  :  '
+                                            '\n Version :'
                                             '\n Date : 2018-09-26')
 
     # def get_ProjectName(self):
