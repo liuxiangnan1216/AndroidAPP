@@ -1,0 +1,59 @@
+{
+        "template 不可用,":
+                {
+                        "type": "controls/app #必须存在,用于区别启动app还是操控控件, 以下是已经完成的模板,后续开发请继续添加",
+                        "eventType":"click  #是controls是必须存在用于定义事件类型是点击,长按或者其他事件",
+                        "pkgName": "com.android.settings",
+                        "className":"android.widget.RelativeLayout",
+                        "description":"",
+                        "resourceId":"",
+                        "text": "test",
+                        "clickAble":false,
+                        "X": 150,
+                        "Y": 50,
+                        "dX": 150,
+                        "dY": 20,
+                        "step": 10,
+                        "scrollable": true,
+                        "XPath": ""
+                },
+        "id_1":
+                {
+                        "type": "app",
+                        "eventType":"luncher",
+                        "pkgName": "com.android.settings"
+                },
+        "id_2":
+                {
+                        "type": "controls",
+                        "clickAble":true,
+                        "eventType":"click",
+                        "scrollable": true
+                },
+        "id_3":
+                {
+                        "type": "controls",
+                        "text": "System updates",
+                        "clickAble":true,
+                        "eventType":"click",
+                        "scrollable": true
+                },
+        "id_4":
+                {
+                        "type": "controls",
+                        "text": "ONLINE UPGRADE",
+                        "clickAble":true,
+                        "eventType":"click",
+                        "scrollable": false
+                },
+        "id_5":
+                {
+                        "type": "controls",
+                        "text": "Check for update",
+                        "clickAble":true,
+                        "eventType":"click",
+                        "scrollable": false
+                }
+
+}
+
